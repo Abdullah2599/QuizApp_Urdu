@@ -38,22 +38,31 @@ class SummaryItem extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 5,
+                  height: 10,
                 ),
                 const Text('Your Answer:',style: 
                   TextStyle(
                       color:Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w200,
                     )),
+                    const SizedBox(
+                  height: 1,
+                ),
                 Text(itemData['user_answer'] as String,
                     style: GoogleFonts.notoNastaliqUrdu(
-                      fontWeight: FontWeight.normal,
+                      fontWeight: FontWeight.w400,
                       color:const Color.fromARGB(255, 255, 255, 255),
                     )),
+                    const SizedBox(
+                  height: 2,
+                ),
                     const Text('Correct Answer:',style: TextStyle(
                       color: Color.fromARGB(255, 255, 255, 255),
                       fontWeight: FontWeight.w200,
                     )),
+                    const SizedBox(
+                  height: 1,
+                ),
                 Text(itemData['correct_answer'] as String,
                     style: GoogleFonts.notoNastaliqUrdu(   
                       fontWeight: FontWeight.normal,
